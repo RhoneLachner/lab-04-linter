@@ -17,9 +17,10 @@ class Stack {
   
     // look at item on top of stack
     peek() {
-        
+        const topItem = this.stack[this.stack.length - 1];
+        return topItem;
     }
-  }
+  };
   
   module.exports = Stack;
   
