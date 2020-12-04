@@ -12,13 +12,12 @@ class Stack {
     
     // take item off the top of stack and return that item
     pop() {
-            this.#stack.push()
+           return this.#stack.pop()            
     }
   
     // look at item on top of stack
     peek() {
-        const topItem = this.stack[this.stack.length - 1];
-        return topItem;
+        return this.stack[this.stack.length - 1];       
     }
   };
   
