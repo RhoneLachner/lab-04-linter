@@ -2,10 +2,13 @@
   "name": "lab-04-linter",
   "version": "1.0.0",
   "description": "Linter Lab",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
+    
   },
   "repository": {
     "type": "git",

@@ -17,7 +17,7 @@ class Stack {
   
     // look at item on top of stack
     peek() {
-        return this.#stack[this.#stack.length - 1];       
+        return this.#stack[this.#stack.length-1];       
     }
   };
   

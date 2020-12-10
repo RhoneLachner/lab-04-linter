@@ -12,10 +12,7 @@ const strip = code => {
 const pairs = {
     '(': ')',
     '{': '}',
-    '[': ']',
-    ')': '(',
-    '}': '{',
-    ']': '[',
+    '[': ']'
 }
 app.use(express.json());
 
@@ -46,7 +43,7 @@ app.post('/lint', (req, res) => {
             }
         }
     })
-    res.send(stack)
+    res.send(prove)
 });
 
 
