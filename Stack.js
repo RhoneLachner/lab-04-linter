@@ -19,7 +19,7 @@ class Stack {
     peek() {
         return this.#stack[this.#stack.length-1];       
     }
-  };
+  }
   
   module.exports = Stack;
   

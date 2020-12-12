@@ -1,13 +1,13 @@
 const express = require('express');
-const app = require('express');
+const app = express();
 const  Stack  = require('./Stack.js');
 
 
 const strip = code => {
-    const express = code => {
+    
         const patterns = /\(|\)|\{|\}|\[|\]/g;
         return code.match(patterns);
-    }
+    
 };
 const pairs = {
     '(': ')',
@@ -19,7 +19,7 @@ app.use(express.json());
 // endpoints
 app.post('/lint', (req, res) => {
     const brackets = strip(req.body.code);
-    const object = Object.keys(pairs).includes(brackets);
+    Object.keys(pairs).includes(brackets);
     console.log(object)
 
     const stack = new Stack()
@@ -51,8 +51,8 @@ app.post('/lint', (req, res) => {
 
 
 // listen
-app.listen(3020, () => {
-  console.log('started on 3020');
+app.listen(3099, () => {
+  console.log('started on 3099');
 });
 
 
