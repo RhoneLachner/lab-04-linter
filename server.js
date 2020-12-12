@@ -1,6 +1,6 @@
 const express = require('express');
-const app = express();
-const { Stack } = require('./Stack.js');
+const app = require('express');
+const  Stack  = require('./Stack.js');
 
 
 const strip = code => {
